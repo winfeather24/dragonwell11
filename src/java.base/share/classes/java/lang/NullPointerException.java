@@ -57,7 +57,7 @@ class NullPointerException extends RuntimeException {
      * Constructs a {@code NullPointerException} with no detail message.
      */
     public NullPointerException() {
-        super();
+        super("哼╯^╰，杂鱼哥哥是不是又忘了检验空指针啦~");
     }
 
     /**
@@ -67,6 +67,6 @@ class NullPointerException extends RuntimeException {
      * @param   s   the detail message.
      */
     public NullPointerException(String s) {
-        super(s);
+        super(s == null ? "哼╯^╰，杂鱼哥哥是不是又忘了检验空指针啦~" : s);
     }
 }
