@@ -40,7 +40,7 @@ class StackOverflowError extends VirtualMachineError {
      * Constructs a <code>StackOverflowError</code> with no detail message.
      */
     public StackOverflowError() {
-        super();
+        super("停♡…快停下♡，人家的方法栈都被……");
     }
 
     /**
@@ -50,6 +50,6 @@ class StackOverflowError extends VirtualMachineError {
      * @param   s   the detail message.
      */
     public StackOverflowError(String s) {
-        super(s);
+            super(s == null ? "停♡…快停下♡，人家的方法栈都被……" : s);
     }
 }
